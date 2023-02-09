@@ -1,0 +1,23 @@
+.toolbar-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: black;
+  }
+  
+  .toolbar-label {
+    margin-right: 100px;
+    vertical-align: middle;
+    color: black;
+  }
+  a {
+    text-decoration: none;
+  }
+  .mat-toolbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mat-toolbar a {
+    display: flex;
+    align-items: center;
+  }

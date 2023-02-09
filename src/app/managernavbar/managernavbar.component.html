@@ -1,0 +1,21 @@
+<mat-toolbar >
+    <mat-icon class="toolbar-icon">menu</mat-icon>
+    
+  
+    <a mat-icon-button [routerLink]="['/userreport']">
+      <mat-icon class="toolbar-icon">person</mat-icon>
+      <span class="toolbar-label">Users Reports</span>
+    </a>
+    <a mat-icon-button [routerLink]="['/adduser']">
+      <mat-icon class="toolbar-icon">control_point</mat-icon>
+      <span class="toolbar-label">Add User</span>
+    </a>
+    <a mat-icon-button [routerLink]="['/addproject']">
+        <mat-icon class="toolbar-icon">playlist_add</mat-icon>
+        <span class="toolbar-label">Add Project</span>
+      </a><a mat-icon-button [routerLink]="['/projects']">
+        <mat-icon class="toolbar-icon">library_books</mat-icon>
+        <span class="toolbar-label">Projects</span>
+      </a>
+  </mat-toolbar>
+

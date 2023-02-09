@@ -1,0 +1,9 @@
+.float-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  button{
+    margin: 5px;
+  }

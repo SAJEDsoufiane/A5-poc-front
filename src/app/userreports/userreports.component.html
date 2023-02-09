@@ -1,0 +1,59 @@
+<app-managernavbar></app-managernavbar>
+<div class="container mt-5">
+    <h2>List of users</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">UserName</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                <th scope="col">Manager</th>
+                <th scope="col">Actions</th>
+                <th scope="col">Report</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.role }}</td>
+                <td>{{ user.manager }}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="updateUser(user.id)">Update</button>
+                    <button class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button>
+                </td>
+                <td>
+                    <button mat-icon-button >
+                        <mat-icon>file_download</mat-icon>
+                      </button>                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="card">
+        <form *ngIf="updateDiv">
+            <div class="card-header">
+                User Infos
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" [(ngModel)]="user.name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" [(ngModel)]="user.email" name="email">
+                </div>
+                
+                
+                <button class="btn btn-primary" (click)="update(user.id)">Update User</button>
+                <div class="float-right"> <button class="btn btn-danger" (click)="cancel()">Cancel</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>

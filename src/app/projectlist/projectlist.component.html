@@ -1,0 +1,18 @@
+<app-managernavbar></app-managernavbar>
+<div class="container mt-5">
+    <h2>List of projects</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td>{{ project.title }}</td>
+        <td>{{ project.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

@@ -1,0 +1,12 @@
+h1[mat-dialog-title] {
+    color: green;
+  }
+  
+  mat-dialog-content {
+    text-align: center;
+  }
+  
+  button[mat-dialog-close] {
+    background-color: green;
+    color: white;
+  }
